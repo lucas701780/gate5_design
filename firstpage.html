@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gate5頂級車體鍍膜</title>
+    <style>
+        body {
+            background-image: url(' assets/img/slider/firstpage.jpg ');
+            background-repeat: no-repeat;
+            background-color: 背景顏色;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+
+<body>
+        
+</body>
+<SCRIPT LANGUAGE="JavaScript">
+
+    var start = new Date();
+    start = Date.parse(start) / 1000;
+    var counts = 10;
+    function CountDown() {
+        var now = new Date();
+        now = Date.parse(now) / 1000;
+        var x = parseInt(counts - (now - start), 10);
+        if (document.form1) { document.form1.clock.value = x; }
+        if (x > 0) {
+            timerID = setTimeout("CountDown()", 100)
+        } else {
+            location.href = "index.html"
+        }
+    }
+
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+
+    window.setTimeout('CountDown()', 100);
+
+</script>
+<FORM NAME="form1">
+    <!-- <INPUT TYPE="text" NAME="clock" SIZE="2" VALUE="50">  -->
+</FORM>
+
+</html>
